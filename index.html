@@ -68,12 +68,9 @@ img {
 <div id="data-analysis" class="section level2">
 <h2>Data Analysis</h2>
 <p>First, we need to set up our computing environment and ingest the input data. We’ll set aside 20% of the set for testing later, and investigate only the remaining training set.</p>
-<pre class="r"><code>library(ggplot2)
-library(reshape2)
-library(caret); </code></pre>
-<pre><code>## Loading required package: lattice</code></pre>
-<pre class="r"><code>library(doParallel)</code></pre>
-<pre><code>## Loading required package: foreach
+<pre class="r"><code>library(ggplot2); library(reshape2); library(caret); library(doParallel)</code></pre>
+<pre><code>## Loading required package: lattice
+## Loading required package: foreach
 ## Loading required package: iterators
 ## Loading required package: parallel</code></pre>
 <pre class="r"><code>registerDoParallel(cores=4)
