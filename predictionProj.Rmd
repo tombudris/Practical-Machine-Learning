@@ -10,10 +10,7 @@ output: html_document
 First, we need to set up our computing environment and ingest the input data.  We'll set aside 20% of the set for testing later, and investigate only the remaining training set.
 
 ```{r}
-library(ggplot2)
-library(reshape2)
-library(caret); 
-library(doParallel)
+library(ggplot2); library(reshape2); library(caret); library(doParallel)
 registerDoParallel(cores=4)
 set.seed(1234)
 
